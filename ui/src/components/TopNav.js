@@ -179,6 +179,7 @@ class TopNav extends Component {
                 border: "none",
                 outline: "none",
                 cursor: "pointer",
+                color: "white",
                 fontWeight: language !== "kz" ? "normal" : "bold",
               }}
             >
@@ -191,6 +192,7 @@ class TopNav extends Component {
                 border: "none",
                 outline: "none",
                 cursor: "pointer",
+                color: "white",
                 fontWeight: language !== "ru" ? "normal" : "bold",
               }}
             >
@@ -203,6 +205,7 @@ class TopNav extends Component {
                 border: "none",
                 outline: "none",
                 cursor: "pointer",
+                color: "white",
                 fontWeight: language !== "en" ? "normal" : "bold",
               }}
             >
