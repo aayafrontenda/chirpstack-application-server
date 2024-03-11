@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import { withRouter } from 'react-router-dom';
+import { withRouter } from "react-router-dom";
 
-import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
+import Grid from "@material-ui/core/Grid";
+import Card from "@material-ui/core/Card";
 import { CardContent } from "@material-ui/core";
 
 import NetworkServerStore from "../../stores/NetworkServerStore";
 import NetworkServerForm from "./NetworkServerForm";
-
 
 class UpdateNetworkServer extends Component {
   constructor() {
@@ -17,13 +16,13 @@ class UpdateNetworkServer extends Component {
   }
 
   onSubmit(networkServer) {
-    NetworkServerStore.update(networkServer, resp => {
+    NetworkServerStore.update(networkServer, (resp) => {
       this.props.history.push("/network-servers");
     });
   }
 
   render() {
-    return(
+    return (
       <Grid container spacing={4}>
         <Grid item xs={12}>
           <Card>
