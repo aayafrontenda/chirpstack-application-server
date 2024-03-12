@@ -552,5 +552,50 @@
     "Kind": "Kind",
     "Name": "Name",
     "ID": "ID"
+  },
+  "CreateServiceProfileJS": {
+    "DialogTitle": "Add a network-server?",
+    "DialogContentText1": "hirpStack Application Server isn't connected to a ChirpStack Network Server network-server. Did you know that ChirpStack Application Server can connect to multiple ChirpStack Network Server instances, e.g. to support multiple regions?",
+    "DialogContentText2": "Would you like to connect to a network-server now?",
+    "AddNetworkServer": "Add network-server",
+    "Dismiss": "Dismiss",
+    "ServiceProfiles": "Service-profiles",
+    "Create": "Create",
+    "CreateServiceProfile": "Create service-profile"
+  },
+  "ListServiceProfilesJS": {
+    "Create": "Create",
+    "ServiceProfiles": "Service-profiles",
+    "Name": "Name",
+    "ID": "ID",
+    "NetworkServer": "Network Server"
+  },
+  "ServiceProfileFormJS": {
+    "nameLabel": "Service-profile name",
+    "nameHelper": "A name to identify the service-profile.",
+    "networkServerIDLabel": "Network-server",
+    "networkServerIDHelper": "The network-server on which this service-profile will be provisioned. After creating the service-profile, this value can't be changed.",
+    "AddGatewayMetadata": "Add gateway meta-data",
+    "MetadataHelper": "GW metadata (RSSI, SNR, GW geoloc., etc.) are added to the packet sent to the application-server.",
+    "EnableNetworkGeolocation": "Enable network geolocation",
+    "NetworkGeolocationHelper": "When enabled, the network-server will try to resolve the location of the devices under this service-profile. Please note that you need to have gateways supporting the fine-timestamp feature and that the network-server needs to be configured in order to provide geolocation support.",
+    "devStatusReqFreqLabel": "Device-status request frequency",
+    "devStatusReqFreqHelper": "Frequency to initiate an End-Device status request (request/day). Set to 0 to disable.",
+    "ReportBatteryLevel": "Report device battery level to application-server",
+    "ReportLinkMargin": "Report device link margin to application-server",
+    "drMinLabel": "Minimum allowed data-rate",
+    "drMinHelper": "Minimum allowed data rate. Used for ADR.",
+    "drMaxLabel": "Maximum allowed data-rate",
+    "drMaxHelper": "Maximum allowed data rate. Used for ADR.",
+    "PrivateGateways": "Private gateways",
+    "PrivateGatewaysHelper": "Gateways under this service-profile are private. This means that these gateways can only be used by devices under the same service-profile."
+  },
+  "ServiceProfileLayoutJS": {
+    "DeleteConfirmation": "Are you sure you want to delete this service-profile?",
+    "Delete": "Delete",
+    "ServiceProfiles": "Service-profiles"
+  },
+  "UpdateServiceProfileJS": {
+    "UpdateServiceProfile": "Update service-profile"
   }
 }
