@@ -542,5 +542,15 @@
   },
   "UpdateNetworkServerJS": {
     "UpdateNetworkServer": "Update network-server"
+  },
+  "SearchJS": {
+    "application": "application",
+    "organization": "organization",
+    "device": "device",
+    "gateway": "gateway",
+    "Search": "Search",
+    "Kind": "Kind",
+    "Name": "Name",
+    "ID": "ID"
   }
 }
