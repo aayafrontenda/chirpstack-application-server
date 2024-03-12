@@ -66,7 +66,7 @@ class ListGatewaysMap extends Component {
       return (
         <Card>
           <CardHeader title={translate("activeGateways")} />
-          <CardContent>No data available.</CardContent>
+          <CardContent>{translate("noDataAvailable")}</CardContent>
         </Card>
       );
     }
@@ -106,7 +106,7 @@ class ListGatewaysMap extends Component {
 
       if (item.lastSeenAt === undefined || item.lastSeenAt === null) {
         marker = grayMarker;
-        lastSeen = "Never seen online";
+        lastSeen = translate("neverSeenOnline");
       } else {
         const ts = moment(item.lastSeenAt);
         if (ts.isBefore(moment().subtract(5, "minutes"))) {
@@ -164,7 +164,11 @@ class DevicesActiveInactive extends Component {
         this.props.summary.inactiveCount !== 0)
     ) {
       data = {
-        labels: ["Never seen", "Inactive", "Active"],
+        labels: [
+          translate("neverSeen"),
+          translate("inactive"),
+          translate("active"),
+        ],
         datasets: [
           {
             data: [
@@ -197,7 +201,7 @@ class DevicesActiveInactive extends Component {
               className={this.props.classes.doughtnutChart}
             />
           )}
-          {!data && <div>No data available.</div>}
+          {!data && <div>{translate("noDataAvailable")}</div>}
         </CardContent>
       </Card>
     );
@@ -216,7 +220,11 @@ class GatewaysActiveInactive extends Component {
         this.props.summary.inactiveCount !== 0)
     ) {
       data = {
-        labels: ["Never seen", "Inactive", "Active"],
+        labels: [
+          translate("neverSeen"),
+          translate("inactive"),
+          translate("active"),
+        ],
         datasets: [
           {
             data: [
@@ -249,7 +257,7 @@ class GatewaysActiveInactive extends Component {
               className={this.props.classes.doughtnutChart}
             />
           )}
-          {!data && <div>No data available.</div>}
+          {!data && <div>{translate("noDataAvailable")}</div>}
         </CardContent>
       </Card>
     );
@@ -318,7 +326,7 @@ class DevicesDataRates extends Component {
               className={this.props.classes.doughtnutChart}
             />
           )}
-          {!data && <div>No data available.</div>}
+          {!data && <div>{translate("noDataAvailable")}</div>}
         </CardContent>
       </Card>
     );

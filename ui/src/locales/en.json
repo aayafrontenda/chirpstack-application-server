@@ -9,6 +9,7 @@
   "networkServers": "Network-servers",
   "gatewayProfiles": "Gateway-profiles",
   "organizations": "Organizations",
+  "organization": "Organization",
   "allUsers": "All users",
   "apiKeys": "API keys",
   "orgDashboard": "Org. dashboard",
@@ -64,5 +65,19 @@
   "addDeviceProfileQ": "Add a service-profile?",
   "addDeviceProfileHelperInfo": "The selected organization does not have a device-profile yet. A device-profile defines the capabilities and boot parameters of a device. You can create multiple device-profiles for different kind of devices.",
   "wouldYouLikeToCreateDeviceProfileQ": "Would you like to create a device-profile?",
-  "createDeviceProfile": "Create device-profile"
+  "createDeviceProfile": "Create device-profile",
+  "apiKeyName": "API key name",
+  "apiKeyID": "API key ID",
+  "token": "Token",
+  "tokenHelper": "Use this token when making API request with this API key. This token is provided once.",
+  "apiKeyNameHelper": "A descriptive name for the API key",
+  "globalApiKeys": "Global API keys",
+  "create": "Create",
+  "createApiKey": "Create API key",
+  "apiKeyDeleteConfirmation": "Are you sure you want to delete this api key?",
+  "noDataAvailable": "No data available.",
+  "neverSeen": "Never seen",
+  "neverSeenOnline": "Never seen online",
+  "inactive": "Inactive",
+  "active": "Active"
 }
