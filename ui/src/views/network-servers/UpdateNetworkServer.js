@@ -8,6 +8,12 @@ import { CardContent } from "@material-ui/core";
 import NetworkServerStore from "../../stores/NetworkServerStore";
 import NetworkServerForm from "./NetworkServerForm";
 
+import { translate } from "../../helpers/translate";
+
+const t = (key) => {
+  return translate("UpdateNetworkServerJS", key);
+};
+
 class UpdateNetworkServer extends Component {
   constructor() {
     super();
@@ -28,7 +34,7 @@ class UpdateNetworkServer extends Component {
           <Card>
             <CardContent>
               <NetworkServerForm
-                submitLabel="Update network-server"
+                submitLabel={t("UpdateNetworkServer")}
                 object={this.props.networkServer}
                 onSubmit={this.onSubmit}
               />

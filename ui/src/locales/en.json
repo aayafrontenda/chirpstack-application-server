@@ -539,5 +539,8 @@
   },
   "UpdateMulticastGroupJS": {
     "UpdateMulticastGroup": "Update multicast-group"
+  },
+  "UpdateNetworkServerJS": {
+    "UpdateNetworkServer": "Update network-server"
   }
 }
