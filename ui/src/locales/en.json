@@ -482,5 +482,62 @@
   },
   "UpdateGatewayJS": {
     "UpdateGateway": "Update gateway"
+  },
+  "CreateMulticastGroupJS": {
+    "Applications": "Applications",
+    "MulticastGroups": "Multicast groups",
+    "Create": "Create",
+    "CreateMulticastGroup": "Create multicast-group"
+  },
+  "ListMulticastGroupDevicesJS": {
+    "RemoveConfirmation": "Are you sure you want to remove the selected devices from the multicast-group?",
+    "RemoveFromGroup": "Remove from group",
+    "DeviceName": "Device name",
+    "DeviceEUI": "Device EUI"
+  },
+  "ListMulticastGroupsJS": {
+    "Create": "Create",
+    "Name": "Name",
+    "ID": "ID"
+  },
+  "MulticastGroupFormJS": {
+    "ClassB": "Class-B",
+    "ClassC": "Class-C",
+    "every": "every",
+    "second": "second",
+    "2seconds": "2 seconds",
+    "4seconds": "4 seconds",
+    "8seconds": "8 seconds",
+    "16seconds": "16 seconds",
+    "32seconds": "32 seconds",
+    "64seconds": "64 seconds",
+    "128seconds": "128 seconds",
+    "nameLabel": "Multicast-group name",
+    "nameHelper": "The name of the multicast-group",
+    "mcAddrLabel": "Multicast address",
+    "mcNwkSKeyLabel": "Multicast network session key",
+    "mcAppSKeyLabel": "Multicast application session key",
+    "fCntLabel": "Frame-counter",
+    "drLabel": "Data-rate",
+    "drHelper": "The data-rate to use when transmitting the multicast frames. Please refer to the LoRaWAN Regional Parameters specification for valid values.",
+    "frequencyLabel": "Frequency",
+    "frequencyHelper": "The frequency to use when transmitting the multicast frames. Please refer to the LoRaWAN Regional Parameters specification for valid values.",
+    "MultiCastGroupType": "Multicast-group type",
+    "SelectMulticastGroupType": "Select multicast-group type",
+    "MulticastGroupTypeInfo": "The multicast-group type defines the way how multicast frames are scheduled by the network-server.",
+    "PingSlotPeriodicity": "ping-slot periodicity",
+    "selectClassBPingSlotPeriodicity": "Select Class-B ping-slot periodicity",
+    "Hz": "Hz"
+  },
+  "MulticastGroupLayoutJS": {
+    "DeleteConfirmation": "Are you sure you want to delete this multicast-group?",
+    "Delete": "Delete",
+    "Applications": "Applications",
+    "MulticastGroups": "Multicast groups",
+    "Devices": "Devices",
+    "Configuration": "Configuration"
+  },
+  "UpdateMulticastGroupJS": {
+    "UpdateMulticastGroup": "Update multicast-group"
   }
 }
