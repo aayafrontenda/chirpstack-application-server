@@ -597,5 +597,48 @@
   },
   "UpdateServiceProfileJS": {
     "UpdateServiceProfile": "Update service-profile"
+  },
+  "ChangeUserPasswordJS": {
+    "Password": "Password",
+    "Users": "Users",
+    "ChangePassword": "Change password",
+    "UpdatePassword": "Update password"
+  },
+  "CreateUserJS": {
+    "Users": "Users",
+    "Create": "Create",
+    "CreateUser": "Create user"
+  },
+  "ListUsersJS": {
+    "Users": "Users",
+    "Create": "Create",
+    "Email": "Email",
+    "Active": "Active",
+    "Admin": "Admin"
+  },
+  "LoginJS": {
+    "Username": "Username",
+    "email": "email",
+    "Password": "Password",
+    "ChirpStackLogin": "ChirpStack Login",
+    "Login": "Login"
+  },
+  "UpdateUserJS": {
+    "UpdateUser": "Update user"
+  },
+  "UserFormJS": {
+    "Email": "E-mail address",
+    "noteLabel": "Optional note",
+    "noteHelper": "Optional note, e.g. a phone number, address, comment...",
+    "Password": "Password",
+    "Permissions": "Permissions",
+    "IsActive": "Is active",
+    "IsGlobalAdmin": "Is global admin"
+  },
+  "UserLayoutJS": {
+    "DeleteConfirmation": "Are you sure you want to delete this user?",
+    "ChangePassword": "Change password",
+    "Delete": "Delete",
+    "Users": "Users"
   }
 }
