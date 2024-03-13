@@ -767,5 +767,300 @@
   },
   "UpdateApplicationJS": {
     "UpdateApplication": "Update application"
+  },
+  "AWSSNSCardJS": {
+    "DeleteConfirmation": "Are you sure you want to remove the AWS SNS integration?",
+    "AWS_SNS": "AWS SNS",
+    "AWS_SNS_HELPER": "The AWS SNS integration forwards events to an AWS SNS topic.",
+    "Edit": "Edit",
+    "Remove": "Remove",
+    "Add": "Add"
+  },
+  "AWSSNSIntegrationFormJS": {
+    "JSON": "JSON",
+    "ProtocolBuffers": "Protocol Buffers",
+    "JSONLegacy": "JSON (legacy, will be deprecated)",
+    "PayloadMarshaler": "Payload marshaler",
+    "marshalerLabel": "Select payload marshaler",
+    "marshalerHelper": "This defines how the payload will be encoded.",
+    "regionLabel": "AWS region",
+    "accessKeyIDLabel": "AWS Access Key ID",
+    "secretAccessKeyLabel": "AWS Secret Access Key",
+    "topicARNLabel": "AWS SNS topic ARN"
+  },
+  "AzureServiceBusCardJS": {
+    "DeleteConfirmation": "Are you sure you want to remove the Azure Service-Bus integration?",
+    "AzureServiceBus": "Azure Service-Bus",
+    "Description": "The Azure Service-Bus integration forwards events to an Azure Service-Bus topic or queue.",
+    "Edit": "Edit",
+    "Remove": "Remove",
+    "Add": "Add"
+  },
+  "AzureServiceBusIntegrationFormJS": {
+    "JSON": "JSON",
+    "ProtocolBuffers": "Protocol Buffers",
+    "JSONLegacy": "JSON (legacy, will be deprecated)",
+    "PayloadMarshaler": "Payload marshaler",
+    "marshalerLabel": "Select payload marshaler",
+    "marshalerHelper": "This defines how the payload will be encoded.",
+    "connectionStringLabel": "Azure Service-Bus connection string",
+    "connectionStringHelper": "This string can be obtained after creating a 'Shared access policy' with 'Send' permission.",
+    "publishNameLabel": "Azure Service-Bus topic / queue name"
+  },
+  "CreateAWSSNSIntegrationJS": {
+    "Add_AWS_SNS_integration": "Add AWS SNS integration",
+    "Add_integration": "Add integration"
+  },
+  "CreateAzureServiceBusIntegrationJS": {
+    "Add_Azure_Service_Bus_integration": "Add Azure Service-Bus integration",
+    "Add_integration": "Add integration"
+  },
+  "CreateGCPPubSubIntegrationJS": {
+    "Add_GCP_Pub_Sub_integration": "Add GCP Pub/Sub integration",
+    "Add_integration": "Add integration"
+  },
+  "CreateHTTPIntegrationJS": {
+    "Add_HTTP_integration": "Add HTTP integration",
+    "Add_integration": "Add integration"
+  },
+  "CreateInfluxDBIntegrationJS": {
+    "Add_InfluxDB_integration": "Add InfluxDB integration",
+    "Add_integration": "Add integration"
+  },
+  "CreateLoRaCloudIntegrationJS": {
+    "Add_Semtech_LoRa_Cloud_integration": "Add Semtech LoRa Cloud_integration",
+    "Add_integration": "Add integration"
+  },
+  "CreateMyDevicesIntegrationJS": {
+    "Title": "Add MyDevices integration",
+    "Add_integration": "Add integration"
+  },
+  "CreatePilotThingsIntegrationJS": {
+    "Title": "Add Pilot Things integration",
+    "Add_integration": "Add integration"
+  },
+  "CreateThingsBoardIntegrationJS": {
+    "Title": "Add ThingsBoard integration",
+    "Add_integration": "Add integration"
+  },
+  "GCPPubSubCardJS": {
+    "DeleteConfirmation": "Are you sure you want to remove the GCP Pub/Sub integration?",
+    "Title": "GCP Pub/Sub",
+    "Description": "The GCP Pub/Sub integration forwards events to a GCP Pub/Sub topic.",
+    "Edit": "Edit",
+    "Remove": "Remove",
+    "Add": "Add"
+  },
+  "GCPPubSubIntegrationFormJS": {
+    "JSON": "JSON",
+    "ProtocolBuffers": "Protocol Buffers",
+    "JSONLegacy": "JSON (legacy, will be deprecated)",
+    "PayloadMarshaler": "Payload marshaler",
+    "marshalerLabel": "Select payload marshaler",
+    "marshalerHelper": "This defines how the payload will be encoded.",
+    "projectIDLabel": "GCP project ID",
+    "topicNameLabel": "GCP Pub/Sub topic name",
+    "credentialsFileLabel": "GCP service-account credentials file",
+    "credentialsFileHelper": "Under IAM create a Service account with 'Pub/Sub Publisher' role, then put the content of the JSON key in this field."
+  },
+  "HTTPJS": {
+    "DeleteConfirmation": "Are you sure you want to remove the HTTP integration?",
+    "Title": "HTTP",
+    "Description": "The HTTP integration forwards events to a user-configurable endpoint as POST requests.",
+    "Edit": "Edit",
+    "Remove": "Remove",
+    "Add": "Add"
+  },
+  "HTTPIntegrationFormJS": {
+    "HeaderName": "Header name",
+    "HeaderValue": "Header value",
+    "JSON": "JSON",
+    "ProtocolBuffers": "Protocol Buffers",
+    "JSONLegacy": "JSON (legacy, will be deprecated)",
+    "PayloadMarshaler": "Payload marshaler",
+    "marshalerLabel": "Select payload marshaler",
+    "marshalerHelper": "This defines how the payload will be encoded.",
+    "Headers": "Headers",
+    "AddHeader": "Add header",
+    "Endpoints": "Endpoints",
+    "eventEndpointURLLabel": "Endpoint URL(s) for events",
+    "eventEndpointURLHelper": "ChirpStack will make a POST request to this URL(s) with 'event' as query parameter. Multiple URLs can be defined as a comma separated list. Whitespace will be automatically removed.",
+    "uplinkDataURLLabel": "Uplink data URL(s)",
+    "uplinkDataURLHelper": "Multiple URLs can be defined as a comma separated list. Whitespace will be automatically removed.",
+    "joinNotificationURLLabel": "Join notification URL(s)",
+    "joinNotificationURLHelper": "Multiple URLs can be defined as a comma separated list. Whitespace will be automatically removed.",
+    "statusNotificationURLLabel": "Device-status notification URL(s)",
+    "statusNotificationURLHelper": "Multiple URLs can be defined as a comma separated list. Whitespace will be automatically removed.",
+    "locationNotificationURLLabel": "Location notification URL(s)",
+    "locationNotificationURLHelper": "Multiple URLs can be defined as a comma separated list. Whitespace will be automatically removed.",
+    "ackNotificationURLLabel": "ACK notification URL(s)",
+    "ackNotificationURLHelper": "Multiple URLs can be defined as a comma separated list. Whitespace will be automatically removed.",
+    "txAckNotificationURLLabel": "TX ACK notification URL(s)",
+    "txAckNotificationURLHelper": "This notification is sent when the downlink was acknowledged by the LoRa gateway for transmission. Multiple URLs can be defined as a comma separated list. Whitespace will be automatically removed.",
+    "integrationNotificationURLLabel": "Integration notification URL(s)",
+    "integrationNotificationURLHelper": "This notification can by sent by configured integrations to send custom payloads. Multiple URLs can be defined as a comma separated list. Whitespace will be automatically removed.",
+    "errorNotificationURLLabel": "Error notification URL(s)",
+    "errorNotificationURLHelper": "Multiple URLs can be defined as a comma separated list. Whitespace will be automatically removed."
+  },
+  "InfluxDBCardJS": {
+    "DeleteConfirmation": "Are you sure you want to remove the InfluxDB integration?",
+    "Title": "InfluxDB",
+    "Description": "The InfluxDB integration writes events into an InfluxDB time-series database.",
+    "Edit": "Edit",
+    "Remove": "Remove",
+    "Add": "Add"
+  },
+  "InfluxDBIntegrationFormJS": {
+    "Nanosecond": "Nanosecond",
+    "Microsecond": "Microsecond",
+    "Millisecond": "Millisecond",
+    "Second": "Second",
+    "Minute": "Minute",
+    "Hour": "Hour",
+    "InfluxDBVersion": "InfluxDB version",
+    "SelectInfluxDBVersion": "Select InfluxDB version",
+    "endpointLabel": "API endpoint (write)",
+    "usernameLabel": "Username",
+    "passwordLabel": "Password",
+    "dbName": "Database name",
+    "retentionPolicyNameLabel": "Retention policy name",
+    "retentionPolicyNameHelper": "Sets the target retention policy for the write. InfluxDB writes to the DEFAULT retention policy if you do not specify a retention policy.",
+    "TimestampPrecision": "Timestamp precision",
+    "precisionLabel": "Select timestamp precision",
+    "precisionHelper": "It is recommented to use the least precise precision possible as this can result in significant improvements in compression.",
+    "organizationLabel": "Organization",
+    "bucketLabel": "Bucket",
+    "tokenLabel": "Token"
+  },
+  "LoRaCloudCardJS": {
+    "DeleteConfirmation": "Are you sure you want to remove the Semtech LoRa Cloud integration?",
+    "Title": "Semtech LoRa Cloud",
+    "Description": " The Semtech LoRa Cloud integration provides Modem & Geolocation Services.",
+    "Edit": "Edit",
+    "Remove": "Remove",
+    "Add": "Add"
+  },
+  "LoRaCloudIntegrationFormJS": {
+    "ModemGeolocationServices": "Modem & Geolocation Services",
+    "dasTokenLabel": "Token",
+    "dasTokenHelper": "This token can be obtained from loracloud.com",
+    "ImUsing": "I am using LoRa Edge™ LR1110 or my device uses LoRa Basics™ Modem-E",
+    "dasGNSSPortLabel": "GNSS port (FPort)",
+    "dasGNSSPortHelper": "ChirpStack Application Server will only forward the FRMPayload for GNSS geolocation to LoRa Cloud when the uplink matches the configured port.",
+    "dasModemPortLabel": "Modem port (FPort)",
+    "dasModemPortHelper": "ChirpStack Application Server will only forward the FRMPayload to LoRa Cloud when the uplink matches the configured port.",
+    "UseReceiveTimestamp": "Use receive timestamp for GNSS geolocation",
+    "UseReceiveTimestampHelper": "If enabled, the receive timestamp of the gateway will be used as reference instead of the timestamp included in the GNSS payload.",
+    "ImUsing1": "My device adheres to the LoRa Edge™ Tracker Reference Design protocol",
+    "ImUsing1Helper": "If enabled, ChirpStack Application Server will try to resolve the location of the device if a geolocation payload is detected.",
+    "AdvancedGeolocationOptions": "Advanced geolocation options",
+    "geolocationTDOALabel": "TDOA based geolocation",
+    "geolocationTDOAHelper": "If enabled, geolocation will be based on time-difference of arrival (TDOA). Please note that this requires gateways that support the fine-timestamp feature.",
+    "geolocationRSSILabel": "RSSI based geolocation",
+    "geolocationRSSIHelper": "If enabled, geolocation will be based on RSSI values reported by the receiving gateways.",
+    "geolocationWifiLabel": "Wi-Fi based geolocation",
+    "geolocationWifiHelper": "If enabled, geolocation will be based on Wi-Fi access-point data reported by the device.",
+    "geolocationGNSSLabel": "GNSS-based geolocation (LR1110)",
+    "geolocationGNSSHelper": "If enabled, geolocation will be based on GNSS data reported by the device.",
+    "geolocationBufferTTLLabel": "Geolocation buffer TTL (seconds)",
+    "geolocationBufferTTLHelper": "The time in seconds that historical uplinks will be stored in the geolocation buffer. Used for TDOA and RSSI geolocation.",
+    "geolocationMinBufferSizeLabel": "Geolocation minimum buffer size",
+    "geolocationMinBufferSizeHelper": "The minimum buffer size required before using geolocation. Using multiple uplinks for geolocation can increase the accuracy of the geolocation results. Used for TDOA and RSSI geolocation.",
+    "wifiPayloadFieldLabel": "Wifi payload field",
+    "wifiPayloadFieldHelper": "This must match the name of the field in the decoded payload which holds array of Wifi access-points. Each element in the array must contain two keys: 1) macAddress: array of 6 bytes, 2) signalStrength: RSSI of the access-point.",
+    "GNSSPayloadFieldLabel": "GNSS payload field",
+    "GNSSPayloadFieldHelper": "This must match the name of the field in the decoded payload which holds the LR1110 GNSS bytes."
+  },
+  "MQTTCardJS": {
+    "Title": "MQTT",
+    "Description": "The MQTT integration forwards events to a MQTT broker.",
+    "GetCertificate": "Get certificate"
+  },
+  "MQTTCertificateJS": {
+    "Title": "Generate MQTT client certificate",
+    "Description": "If required by the network, the MQTT client needs to be configured with a client certificate in order to connect to the MQTT broker to device data. The generated certificate is application specific. After generating the certificate, the certificate can only be retrieved once.",
+    "GenerateCertificate": "Generate certificate",
+    "expiresAtLabel": "Certificate expires at",
+    "expiresAtHelper": "The certificate expires at this date. Make sure to generate and configure a new certificate for your MQTT client before this expiration date.",
+    "caCertLabel": "CA certificate",
+    "caCertHelper": "The CA certificate is to authenticate the certificate of the server.",
+    "tlsCertLabel": "TLS certificate",
+    "tlsKeyLabel": "TLS key"
+  },
+  "MyDevicesCardJS": {
+    "DeleteConfirmation": "Are you sure you want to remove the MyDevices integration?",
+    "Title": "myDevices",
+    "Description": "The myDevices integration forwards events to the myDevices platform.",
+    "Edit": "Edit",
+    "Remove": "Remove",
+    "Add": "Add"
+  },
+  "MyDevicesIntegrationFormJS": {
+    "Cayenne": "Cayenne",
+    "IoTBox": "IoT in a Box",
+    "CustomEndpointURL": "Custom endpoint URL",
+    "Title": "myDevices endpoint",
+    "_endpointLabel": "Select myDevices endpoint",
+    "Title1": "myDevices integration configuration",
+    "endpointLabel": "myDevices API endpoint"
+  },
+  "PilotThingsCardJS": {
+    "Title": "Pilot Things",
+    "Description": "The Pilot Things integration forwards messages to a Pilot Things instance.",
+    "Edit": "Edit",
+    "Remove": "Remove",
+    "Add": "Add"
+  },
+  "PilotThingsIntegrationFormJS": {
+    "serverLabel": "Pilot Things server",
+    "tokenLabel": "Authentication token"
+  },
+  "ThingsboardCardJS": {
+    "DeleteConfirmation": "Are you sure you want to remove the ThingsBoard integration?",
+    "Title": "ThingsBoard.io",
+    "Description": "The ThingsBoard integration forwards events to a ThingsBoard.io instance.",
+    "Edit": "Edit",
+    "Remove": "Remove",
+    "Add": "Add"
+  },
+  "ThingsBoardIntegrationFormJS": {
+    "serverLabel": "ThingsBoard.io server",
+    "serverHelper": "Each device must have a 'ThingsBoardAccessToken' variable assigned. This access-token is generated by ThingsBoard."
+  },
+  "UpdateAWSSNSIntegrationJS": {
+    "Title": "Update AWS SNS integration",
+    "SubmitLabel": "Update integration"
+  },
+  "UpdateAzureServiceBusIntegrationJS": {
+    "Title": "Update Azure Service-Bus integration",
+    "SubmitLabel": "Update integration"
+  },
+  "UpdateGCPPubSubIntegrationJS": {
+    "Title": "Update GCP Pub/Sub integration",
+    "SubmitLabel": "Update integration"
+  },
+  "UpdateHTTPIntegrationJS": {
+    "Title": "Update HTTP integration",
+    "SubmitLabel": "Update integration"
+  },
+  "UpdateInfluxDBIntegrationJS": {
+    "Title": "Update InfluxDB integration",
+    "SubmitLabel": "Update integration"
+  },
+  "UpdateLoRaCloudIntegrationJS": {
+    "Title": "Update Semtech LoRa Cloud™ integration",
+    "SubmitLabel": "Update integration"
+  },
+  "UpdateMyDevicesIntegrationJS": {
+    "Title": "Update MyDevices integration",
+    "SubmitLabel": "Update integration"
+  },
+  "UpdatePilotThingsIntegrationJS": {
+    "Title": "Update Pilot Things integration",
+    "SubmitLabel": "Update integration"
+  },
+  "UpdateThingsBoardIntegrationJS": {
+    "Title": "Update ThingsBoard integration",
+    "SubmitLabel": "Update integration"
   }
 }
