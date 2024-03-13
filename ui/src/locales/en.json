@@ -719,5 +719,53 @@
   },
   "UpdateOrganizationUserJS": {
     "UpdateUser": "Update user"
+  },
+  "ApplicationFormJS": {
+    "None": "None",
+    "CayenneLPP": "Cayenne LPP",
+    "CustomJS": "Custom JavaScript codec functions",
+    "nameLabel": "Application name",
+    "nameHelper": "The name may only contain words, numbers and dashes.",
+    "descriptionLabel": "Application description",
+    "ServiceProfile": "Service-profile",
+    "SelectServiceProfile": "Select service-profile",
+    "SelectServiceProfileHelper": "The service-profile to which this application will be attached. Note that you can't change this value after the application has been created.",
+    "PayloadCodec": "Payload codec",
+    "SelectPayloadCodec": "Select payload codec",
+    "SelectPayloadCodecHelper1": "By defining a payload codec, ChirpStack Application Server can encode and decode the binary device payload for you.",
+    "ImportantNote": "Important note",
+    "SelectPayloadCodecHelper2": "the payload fields have moved to the device-profile. For backward-compatibility and migration, existing codec settings are still visible. Codec settings on the device-profile have priority over the application codec settings.",
+    "FMustHave": "The function must have the signature ",
+    "DecodeMustReturn": "and must return an object. ChirpStack Application Server will convert this object to JSON.",
+    "EncodeMustReturn": "and must return an array of bytes.",
+    "PayloadCodecNote": "Note: The payload codec fields have moved to the device-profile."
+  },
+  "ApplicationLayoutJS": {
+    "DeleteConfirmation": "Are you sure you want to delete this application? This will also delete all devices part of this application.",
+    "Delete": "Delete",
+    "Applications": "Applications",
+    "Devices": "Devices",
+    "MulticastGroups": "Multicast groups",
+    "ApplicationConfiguration": "Application configuration",
+    "Integrations": "Integrations"
+  },
+  "CreateApplicationJS": {
+    "DialogTitle": "Add a service-profile?",
+    "CreateServiceProfile": "Create service-profile",
+    "Dismiss": "Dismiss",
+    "Applications": "Applications",
+    "Create": "Create",
+    "CreateApplication": "Create application"
+  },
+  "ListApplicationsJS": {
+    "Create": "Create",
+    "Applications": "Applications",
+    "ID": "ID",
+    "Name": "Name",
+    "ServiceProfile": "Service-profile",
+    "Description": "Description"
+  },
+  "UpdateApplicationJS": {
+    "UpdateApplication": "Update application"
   }
 }
