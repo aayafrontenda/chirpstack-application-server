@@ -23,6 +23,7 @@ import InternalStore from "../stores/InternalStore";
 import SessionStore from "../stores/SessionStore";
 import theme from "../theme";
 import { locale, formatMessage as translate } from "devextreme/localization";
+import Logo from "../images/Logo";
 
 const styles = {
   appBar: {
@@ -164,14 +165,15 @@ class TopNav extends Component {
           </IconButton>
 
           <div className={this.props.classes.flex}>
-            <img
+            {/* <img
               src="/logo/logo.png"
               className={this.props.classes.logo}
               alt="ChirpStack.io"
-            />
+            /> */}
+            <Logo width="180" height="32" color="white" />
           </div>
 
-          <div style={{ display: "flex", gap: "8px" }}>
+          <div style={{ display: "flex", gap: "8px", marginRight: "8px" }}>
             <button
               onClick={() => selectLanguage("kz")}
               style={{

@@ -7,7 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import ApplicationStore from "../../../stores/ApplicationStore";
 import AWSSNSIntegrationForm from "./AWSSNSIntegrationForm";
 
-import { translate } from "../../helpers/translate";
+import { translate } from "../../../helpers/translate";
 
 const t = (key) => {
   return translate("CreateAWSSNSIntegrationJS", key);

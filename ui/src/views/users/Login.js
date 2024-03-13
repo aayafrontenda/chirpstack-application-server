@@ -20,7 +20,10 @@ import theme from "../../theme";
 
 import { translate } from "../../helpers/translate";
 
+import Logo from "../../images/Logo";
+
 const t = (key) => {
+  console.log("LOGIN TRANSLATE: ", translate("LoginJS", key));
   return translate("LoginJS", key);
 };
 
@@ -133,7 +136,17 @@ class Login extends Component {
       <Grid container justify="center">
         <Grid item xs={6} lg={4}>
           <Card>
-            <CardHeader title={t("ChirpStackLogin")} />
+            {/* <CardHeader title={t("ChirpStackLogin")} /> */}
+            <div
+              style={{
+                display: "flex",
+                width: "100%",
+                justifyContent: "center",
+                marginTop: "16px",
+              }}
+            >
+              <Logo width="450" height="52" color="#2596BE" />
+            </div>
             <CardContent>
               {!this.state.oidcEnabled && (
                 <LoginForm submitLabel={t("Login")} onSubmit={this.onSubmit} />

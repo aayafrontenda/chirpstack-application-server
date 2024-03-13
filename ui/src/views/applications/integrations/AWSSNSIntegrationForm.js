@@ -9,7 +9,7 @@ import FormComponent from "../../../classes/FormComponent";
 import Form from "../../../components/Form";
 import AutocompleteSelect from "../../../components/AutocompleteSelect";
 
-import { translate } from "../../helpers/translate";
+import { translate } from "../../../helpers/translate";
 
 const t = (key) => {
   return translate("AWSSNSIntegrationFormJS", key);

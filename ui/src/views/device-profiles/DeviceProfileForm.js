@@ -22,6 +22,7 @@ import AutocompleteSelect from "../../components/AutocompleteSelect";
 import NetworkServerStore from "../../stores/NetworkServerStore";
 import { FormLabel } from "../../../node_modules/@material-ui/core";
 
+import { formatMessage as translate } from "devextreme/localization";
 const styles = {
   formLabel: {
     fontSize: 12,

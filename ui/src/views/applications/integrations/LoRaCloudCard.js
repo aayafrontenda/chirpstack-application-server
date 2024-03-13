@@ -10,6 +10,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
 import ApplicationStore from "../../../stores/ApplicationStore";
+import { translate } from "../../../helpers/translate";
 
 const styles = {
   media: {
@@ -17,8 +18,6 @@ const styles = {
     backgroundSize: "contain",
   },
 };
-
-import { translate } from "../../../helpers/translate";
 
 const t = (key) => {
   return translate("LoRaCloudCardJS", key);
