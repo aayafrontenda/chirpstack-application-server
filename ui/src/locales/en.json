@@ -640,5 +640,84 @@
     "ChangePassword": "Change password",
     "Delete": "Delete",
     "Users": "Users"
+  },
+  "CreateOrganizationJS": {
+    "Organizations": "Organizations",
+    "Create": "Create",
+    "CreateOrganization": "Create organization"
+  },
+  "CreateOrganizationUserJS": {
+    "OrganizationUsers": "Organization users",
+    "Add": "Add",
+    "AddUser": "Add user"
+  },
+  "ListOrganizationsJS": {
+    "Create": "Create",
+    "Organizations": "Organizations",
+    "Name": "Name",
+    "DisplayName": "Display name",
+    "CanHaveGateways": "Can have gateways"
+  },
+  "ListOrganizationUsersJS": {
+    "Add": "Add",
+    "OrganizationUsers": "Organization users",
+    "Email": "Email",
+    "OrganizationAdmin": "Organization admin",
+    "GatewayAdmin": "Gateway admin",
+    "DeviceAdmin": "Device admin"
+  },
+  "OrganizationDashboardJS": {
+    "Gateways": "Gateways",
+    "NoDataAvailable": "No data available.",
+    "NeverSeen": "Never seen",
+    "NeverSeenOnline": "Never seen online",
+    "Inactive": "Inactive",
+    "Active": "Active",
+    "ActiveDevices": "Active devices",
+    "ActiveGateways": "Active gateways",
+    "DR": "DR",
+    "DeviceDataRateUsage": "Device data-rate usage"
+  },
+  "OrganizationFormJS": {
+    "nameLabel": "Organization name",
+    "nameHelper": "The name may only contain words, numbers and dashes.",
+    "displayNameLabel": "Display name",
+    "Gateways": "Gateways",
+    "OrganizationCanHaveGateways": "Organization can have gateways",
+    "OrganizationCanHaveGatewaysHelper": "When checked, it means that organization administrators are able to add their own gateways to the network. Note that the usage of the gateways is not limited to this organization.",
+    "maxGatewayCountLabel": "Max. number of gateways",
+    "maxGatewayCountHelper": "The maximum number of gateways that can be added to this organization (0 = unlimited).",
+    "Devices": "Devices",
+    "maxDeviceCountLabel": "Max. number of devices",
+    "maxDeviceCountHelper": "The maximum number of devices that can be added to this organization (0 = unlimited)."
+  },
+  "OrganizationLayoutJS": {
+    "DeleteConfirmation": "Are you sure you want to delete this organization?",
+    "Delete": "Delete",
+    "Organizations": "Organizations",
+    "Dashboard": "Dashboard",
+    "Configuration": "Configuration"
+  },
+  "OrganizationUserFormJS": {
+    "Email": "Email",
+    "PermissionsHelper": "An user without additional permissions will be able to see all resources under this organization and will be able to send and receive device payloads.",
+    "UserIsOrganizationAdmin": "User is organization admin",
+    "OrganizationAdminHelper": "An organization admin user is able to add and modify resources part of the organization.",
+    "UserIsDeviceAdmin": "User is device admin",
+    "DeviceAdminHelper": "A device admin user is able to add and modify resources part of the organization that are related to devices.",
+    "UserIsGatewayAdmin": "User is gateway admin",
+    "GatewayAdminHelper": "A gateway admin user is able to add and modify gateways part of the organization."
+  },
+  "OrganizationUserLayoutJS": {
+    "DeleteConfirmation": "Are you sure you want to remove this organization user (this does not remove the user itself)?",
+    "GotoUser": "Goto user",
+    "Delete": "Delete",
+    "OrganizationUsers": "Organization users"
+  },
+  "UpdateOrganizationJS": {
+    "UpdateOrganization": "Update organization"
+  },
+  "UpdateOrganizationUserJS": {
+    "UpdateUser": "Update user"
   }
 }
