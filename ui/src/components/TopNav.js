@@ -230,14 +230,14 @@ class TopNav extends Component {
             />
           </form>
 
-          <a
+          {/* <a
             href="https://www.chirpstack.io/application-server/"
             target="chirpstack-doc"
           >
             <IconButton className={this.props.classes.iconButton}>
               <HelpCicle />
             </IconButton>
-          </a>
+          </a> */}
 
           <Chip
             avatar={
