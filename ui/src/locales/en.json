@@ -144,7 +144,7 @@
   "fMustHave": "The function must have the signature",
   "decodeMustReturn": "and must return an object. ChirpStack Application Server will convert this object to JSON.",
   "encodeMustReturn": "and must return an array of bytes.",
-  "CreateDevice.js": {
+  "CreateDeviceJS": {
     "question": "Add a device-profile?",
     "helper": "The selected application does not have access to any device-profiles. A device-profile defines the capabilities and boot parameters of a device. You can create multiple device-profiles for different kind of devices.",
     "submitQuestion": "Would you like to create a device-profile?",
