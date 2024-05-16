@@ -1,0 +1,42 @@
+version: "3"
+
+services:
+  chirpstack-application-server:
+    build:
+      context: .
+      dockerfile: Dockerfile-devel
+    restart: unless-stopped
+    depends_on:
+      - postgres
+      - mosquitto
+      - redis
+    ports:
+      - 8080:8080
+
+  postgres:
+    image: postgres:14-alpine
+    restart: unless-stopped
+    volumes:
+      - ./configuration/postgresql/initdb:/docker-entrypoint-initdb.d
+      - postgresqldata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=root
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: redis-server --save 300 1 --save 60 100 --appendonly no
+    volumes:
+      - redisdata:/data
+
+  mosquitto:
+    image: eclipse-mosquitto:2
+    restart: unless-stopped
+#     ports:
+#       - 1883:1883
+    volumes: 
+      - ./configuration/mosquitto/config/:/mosquitto/config/
+
+volumes:
+  postgresqldata:
+  redisdata:

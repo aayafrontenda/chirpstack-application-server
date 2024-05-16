@@ -18,9 +18,10 @@ import "react-leaflet-markercluster/dist/styles.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./index.css";
 
-import ruMessages from "./locales/ru.json";
-import kzMessages from "./locales/kz.json";
-import enMessages from "./locales/en.json";
+// import ruMessages from "./locales/ru.json";
+// import kzMessages from "./locales/kz.json";
+// import enMessages from "./locales/en.json";
+import translations from "./locales/translations.json";
 import { locale } from "devextreme/localization";
 
 Leaflet.Icon.Default.imagePath =
@@ -33,9 +34,9 @@ if (!localStorage.getItem("language")) {
 locale(localStorage.getItem("language"));
 
 loadMessages({
-  ru: ruMessages,
-  kz: kzMessages,
-  en: enMessages,
+  ru: translations.ru,
+  kz: translations.kz,
+  en: translations.en,
 });
 
 ReactDOM.render(<App />, document.getElementById("root"));
