@@ -1,9 +1,0 @@
-FROM ubuntu:20.04
-
-WORKDIR /cas
-COPY ./cas .
-
-RUN mkdir -p /etc/chirpstack-application-server
-RUN cp chirpstack-application-server.toml /etc/chirpstack-application-server/
-
-CMD ["./chirpstack-application-server"]
