@@ -302,7 +302,7 @@ class DeviceActivation extends Component {
 
     let submitLabel = null;
     if (!this.props.deviceProfile.supportsJoin) {
-      submitLabel = translate("reactivateDevice");
+      submitLabel = t("reactivateSubmitLabel");
     }
 
     let showForm = false;

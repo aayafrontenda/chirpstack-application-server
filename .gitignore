@@ -27,6 +27,7 @@
 /static/icon.png
 /static/precache-manifest.*.js
 /ui/build
+/ui/build.zip
 /docs/public
 
 # dependencies
